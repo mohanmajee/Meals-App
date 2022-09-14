@@ -1,0 +1,219 @@
+body{
+    background-color:rgb(131, 61, 78);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUYeWupTkV-UwiIJ7MZGYRIp5enxhwqYh-Yw&usqp=CAU");
+}
+
+/* fav list styles */
+#fav-list{
+    border-radius: 10px; 
+    overflow: scroll;
+    max-height: 65vh;
+    overflow: scroll;
+}
+
+/* removing scroll bar  */
+#fav-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* items styel/  */
+#fav-items{
+    width: 98%;
+    margin: 10px;
+    height: 150px; 
+    border: 2.5px solid whitesmoke; 
+    padding: 0%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,  rgb(37, 41, 39),rgba(77, 104, 97, 0));
+}
+
+/* elements in fav div  */
+#fav-items > div{
+    height: 150px; 
+    width: 160px; 
+    border-radius: 5px;
+    float: right;
+}
+#fav-items > a{
+    text-decoration: none;
+    color: rgb(238, 229, 229);
+}
+
+/* meal imag  */
+#fav-items  img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:auto;
+    
+}
+
+/* heading- name of meal  */
+#fav-items h5{
+    font-family: ui-monospace;
+    height: 60px;
+    overflow: hidden;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: rgb(65, 144, 158);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* add fav button  */
+#fav-items button {
+    height: 40px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,  rgb(85, 182, 122),rgba(255,0,0,0));
+}
+
+/* ------------------------fav ----------------------------- */
+#fav-div{
+    background-color: rgb(142, 119, 153);
+    background-image: linear-gradient( rgb(156, 202, 202) ,rgba(255, 255, 255,0.5),rgba(3,45,107,0.7));
+    border: 2.5px solid rgba(245, 245, 245, 0.877);
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+/* list style  */
+.centerLists{
+    border:  2px solid white;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+#fav-div h1{
+    /* color: ; */
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    color: whitesmoke;
+}
+
+/* home anchors style */
+a img{
+    margin: 25px 0 0 25px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    float: left;
+    border-radius: 15px;
+}
+
+/* styles for size less then 800px  */
+
+@media only screen and (max-width:800px){
+    .centerLists {
+        width: 450px;
+    }
+
+    /* reducing list size and font size image size  */
+    #fav-items{
+        height: 100px; 
+    }
+
+    #fav-items > div{
+        height: 98px; 
+        width: 150px; 
+    }
+
+    #fav-items  img{
+        width: 200px;
+        
+    }
+
+    /* heading size  */
+    #fav-items h5{
+        height: 60px;
+        width: 200px;
+        font-size: 15px;
+        margin: 3px 0px 0px 3px;
+        font-weight: 300;
+    }
+
+    /* button size  */
+    #fav-items button{
+        height: 30px;
+        margin-left: 20px;
+        background-image: linear-gradient(to right,  rgb(250, 75, 98),rgba(255,0,0,0));
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+    a img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* styles for size less then 500px */
+@media only screen and (max-width:500px){
+    .centerLists {
+        width: 350px;
+    }
+
+    /* list div styles  */
+    #fav-items > div{
+        width: 100px; 
+    }
+
+    /* list image items  */
+    #fav-items  img{
+        width: 100px;        
+    }
+        
+    /* fav list styles */
+    #fav-div{
+        padding: 5px;
+    }
+
+    /* items styel/  */
+    #fav-items{
+        margin: 0px;
+        padding: 0%;
+        border-radius: 5px;
+    }
+}
+
+/* styles for size less then 380px */
+@media only screen and (max-width:380px){
+    .centerLists {
+        width: 250px;
+    }
+
+    /* list styles  */
+    #fav-items > div{
+        width: 100px; 
+    }
+
+    #fav-items  img{
+        width: 100px;
+    }
+
+    /* heading styles  */
+    #fav-items h5{
+        height: 50px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+    /* button styles  */
+    #fav-items button{
+        height: 30px;
+        margin-left: 5px;
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+
+    /* home anchor size reduce */
+    a img{
+        height: 25px;
+        width: 25px;
+    }
+}

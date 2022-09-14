@@ -1,0 +1,476 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://aws.wideinfo.org/foodonbook.com/wp-content/uploads/2019/05/07185126/south-indian-meal1.jpg");
+}
+
+/* main heading */
+body > h1 {
+    margin-top: 2.5%;
+    width: 100%;
+    text-align: center;
+    font-family:Arial;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#title-fav{
+    float: right;
+    margin-right: 110px;
+    color: beige;
+    font-family: cursive;
+    font-size: 25px;
+    margin-top: -95px;
+}
+#title-fav-img{
+    height: 160px;
+    width: 80px;
+    position: absolute;
+    top: -4px;
+    left: 88%;
+}
+a{
+    text-decoration: none;
+}
+#title-fav:hover{
+    color:rgb(55, 18, 156);
+    text-decoration: underline;
+}
+
+
+/* search bar  */
+body > #searchBar{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* imput  */
+#searchBar input{
+    width: 30%;
+    min-width: 170px;
+    padding: 5px;
+    border-radius: 6px;
+    padding-left: 25px;
+}
+
+#searchBar button{
+    padding: 5px 20px;
+    border-radius: 6px;
+    background: rgb(116, 104, 112);
+    color: rgb(20, 18, 18);
+    font-size: 17.3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* searhc bar results  */
+#searchBar ul{
+    list-style: none;
+    position: absolute;
+    text-align: start;
+    z-index: 3;
+    left: 32%;
+    width: 30%;
+    overflow: visible;
+    background-color:rgb(92, 88, 88);
+    /* border: black solid 2px; */
+}
+
+#searchBar ul li{
+    padding: 0px 10px;
+    color: rgb(63, 26, 105);
+    width: 100%;
+    min-width: 170px;
+    border: black solid 2px;
+}
+
+#searchBar ul li:hover{
+    background-color: rgb(179, 179, 179);
+}
+
+#searchBar ul li a{
+    overflow: hidden;
+    height: 30px;
+    width: 50%;
+    padding: 0%;
+    margin: 0%;
+    display: inline-block;
+    text-decoration: none;
+}
+#searchBar ul li p{
+    margin-right: 10px;
+    color: rgb(182, 86, 86);
+    float: right;
+    padding: 0%;
+    margin: 0%;
+    font-size: 15px;
+}
+
+#redirect{
+    float: right;
+}
+
+/* main flex to store category and*/
+#mainFlex{
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-flow:nowrap;
+    width:100%;
+    justify-content: space-evenly;
+    background-color:rgba(14, 12, 13, 0.315);
+    color: rgb(221, 193, 193);
+    top: 40%;
+}
+
+
+/* centre list  */
+.centerLists{
+    border:  2.5px solid whitesmoke;
+    width: 45%;
+    height: 70%;
+    margin: 3%;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+#mainFlex h4{
+    width: 100%;
+    text-align: center;
+    font-family: initial;
+    margin-top: 5px;
+}
+
+#mainFlex h2,#fav-list h2{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 100px;
+    font-family: cursive;
+    margin-top: 150px;
+}
+
+
+/* ----------------  cat divs styles--------------------- */
+
+#cat-list{
+    margin: auto;
+    border-radius: 10px; 
+    max-height: 540px;
+    overflow: auto;
+    
+}
+
+#cat-list{
+    max-height: 600px;
+}
+
+/* removing scroll bars */
+#cat-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* iems size  */
+#cat-items{
+    width: 98%;
+    margin: 10px;
+    height: 150px; 
+    border: 2px solid white;
+    padding: 0%;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,  rgb(125, 129, 151),rgba(47, 46, 59, 0));
+}
+
+
+/* divs of item  image */
+#cat-items > div{
+    height: 146px; 
+    width: 160px; 
+    border-radius: 5px;
+    float: right;
+}
+#cat-items > a{
+    text-decoration: none;
+}
+
+/* image meal  */
+#cat-items  img{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+/* name meal/ */
+#cat-items h5{
+    font-family: ui-monospace;
+    height: 70px;
+    overflow: hidden;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+#cat-items button{
+    height: 40px;
+    margin-left: 50px;
+    background-image: linear-gradient(to right,  rgb(145, 172, 182),rgba(255,0,0,0));
+    border-radius: 10px;
+    color: black;
+}
+
+#select-cat{
+    width: 45%;
+    margin: 5px 25%;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    color:black;
+    border-radius: 5px;
+}
+
+/* screen size less then 1300  */
+@media only screen and (max-width:1300px){
+    #mainFlex{
+        flex-wrap:wrap;
+    }
+
+    /* reducing size  */
+    .centerLists {
+        width: 700px;
+    }
+
+    a i{
+        
+        font-size: 30px;
+    }
+}
+
+/* screen size less then 980  */
+@media only screen and (max-width:980px){
+    body > h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    /* decresing size of backforund */
+    #background{
+        height: 50%;
+    }
+
+    #mainFlex{
+        top: 50%;
+    }
+    #title-fav {
+        font-size: 20px;
+    }        
+}
+
+@media only screen and (max-width:760px){
+    .centerLists {
+        width: 400px;
+    }
+
+    /* radjusting sizes of elements of list items  */
+
+    #cat-items{
+        height: 100px; 
+    }
+    
+    #cat-items > div{
+        height: 98px; 
+        width: 150px; 
+    }
+    
+    
+    #cat-items  img{
+        width: 200px;
+        
+    }
+    
+    
+    #cat-items h5{
+        height: 60px;
+        width: 200px;
+        font-size: 15px;
+        margin: 3px 0px 0px 3px;
+        font-weight: 300;
+    }
+    
+    #cat-items button{
+        height: 30px;
+        margin-left: 20px;
+        background-image: linear-gradient(to right,  rgb(93, 113, 121),rgba(85, 70, 70, 0));
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    body > h1 {
+        margin-top: 20%;
+        font-weight: 500;
+    }
+
+    /* search bar size reduced  */
+    #searchBar input{
+        width: 40%;
+    }
+
+    #searchBar button{
+        padding: 5px 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #searchBar ul{
+        left: 25%;
+        width: 40%;
+    }
+
+    #searchBar ul li{
+        padding: 0px 10px;
+        color: black;
+        min-width: 120px;
+        height: 40px;
+    }
+
+
+    #searchBar ul li a{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #searchBar ul li p{
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+    }
+    #title-fav {
+        margin-right: 20px;
+    }
+    #mainFlex h4 {
+        font-size: 17px;
+    }
+}
+
+/* screen size lessss then 530  */
+@media only screen and (max-width:530px){
+
+    #select-cat {
+        font-size: 12px;
+    }
+    a i {
+        
+        font-size: 20px;
+    }
+
+    #background{
+        height: 42%;
+    }
+
+    #mainFlex{
+        top: 42%;
+    }
+    #title-fav {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    body > h1 {
+        font-size: 38px;
+    }
+    
+}
+
+@media only screen and (max-width:400px){
+    body > h1 {
+        margin-top: 20%;
+        font-weight: 300;
+        font-size: 35px;
+    }
+
+        
+    #searchBar input{
+        font-size: 12px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    #searchBar button{
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+
+    #searchBar ul{
+        left: 18%;
+        width: 45%;
+        overflow: hidden;
+    }
+
+    #searchBar ul li{
+        padding: 0px 5px;
+        min-width: 170px;
+        padding: 2px;
+    }
+
+
+
+    #searchBar ul li a{
+        overflow: hidden;
+        height: 20px;
+        font-size: 12px;
+        width: 100%;
+    }
+    #searchBar ul li p{
+        height: 0px;
+        width: 0px;
+    }
+    #title-fav {
+        margin-top: 20%;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    
+    #cat-items > div{
+        height: 98px; 
+        width: 100px; 
+    }
+
+    #cat-items  img{
+        width: 100px;
+        
+    }
+
+    
+    
+    #cat-items h5{
+        height: 50px;
+        width: 140px;
+        font-size: 12px;
+    }
+    
+    #cat-items button{
+        height: 30px;
+        margin-left: 20px;
+        background-image: linear-gradient(to right,  rgb(145, 172, 182),rgba(255,0,0,0));
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    #mainFlex{
+        top: 38%;
+    }
+    #background{
+        height: 38%;
+    }
+}

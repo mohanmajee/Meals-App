@@ -1,0 +1,124 @@
+body{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(126, 125, 128);
+    background-image: linear-gradient(to bottom right,rgba(38, 45, 46, 0) 10%,  rgb(151, 226, 148) 60%,rgba(112, 229, 250, 0) 80%,#04a7e7);
+}
+
+/* main div styles */
+#main{
+    height: 95%;  
+    text-align: center; 
+}
+h2{
+    font-size: 40px;
+    
+}
+img{
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+a{
+    font-size: 20px;
+}
+
+/* home anchors style */
+#backImg{
+    margin: 25px 0 0 25px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    float: left;
+}
+
+/* screen size less then 700px */
+@media only screen and (max-width:700px){
+
+    h2{
+        font-size: 25px;
+        
+    }
+    img{
+        border-radius: 20px;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* screen size less then 400px */
+@media only screen and (max-width:400px){
+    h2{
+        font-size: 17px;
+        
+    }
+    img{
+        border-radius: 5px;
+        height: 150px;
+        width: 150px;
+    }
+    a{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+/* styles for size less then 800px  */
+@media only screen and (max-width:800px){
+    .centerLists {
+        width: 450px;
+    }
+
+    /* reducing list size and font size image size  */
+    #alpha-items,#fav-items,#cat-items{
+        height: 100px; 
+    }
+
+    #alpha-items > div,#fav-items > div,#cat-items > div{
+        height: 98px; 
+        width: 150px; 
+    }
+
+    #alpha-items  img, #fav-items  img, #cat-items  img{
+        width: 200px;
+        
+    }
+
+    /* heading size  */
+    #alpha-items h5,#fav-items h5,#cat-items h5{
+        height: 60px;
+        width: 200px;
+        font-size: 15px;
+        margin: 3px 0px 0px 3px;
+        font-weight: 300;
+    }
+
+    /* button size  */
+    #alpha-items button, #fav-items button, #cat-items button{
+        height: 30px;
+        margin-left: 20px;
+        background-image: linear-gradient(to right,  rgb(250, 75, 98),rgba(255,0,0,0));
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+    #backImg{
+        height: 40px;
+        width: 40px;
+        margin: 15px 0 0 15px;
+    }
+}
+
+/* styles for size less then 380px */
+@media only screen and (max-width:380px){
+    /* home anchor size reduce */
+    #backImg{
+        height: 25px;
+        width: 25px;
+    }
+}
